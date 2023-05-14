@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 import SaveBtn from "./SaveBtn";
+import DownloadBtn from "./DownloadBtn";
 const TopBar = () => {
   return (
     <div className='topContainer'>
@@ -8,6 +9,7 @@ const TopBar = () => {
       <div className='saveDel'>
         <FaTrashAlt className='trashIcon' />
         <SaveBtn />
+        <DownloadBtn />
       </div>
     </div>
   );

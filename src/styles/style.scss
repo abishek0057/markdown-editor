@@ -21,6 +21,9 @@ body{
     & * {
         margin: 0;
     }
+    h2{
+      letter-spacing: 6px;
+    }
   }
 
 .saveBtn {
@@ -33,10 +36,12 @@ body{
     white-space: nowrap;
     user-select: none;    
     cursor: pointer;
-
-        p {
-            margin-left: 5%;
-        }
+      p {
+        margin-left: 5%;
+      }
+      &:hover{
+        background-color: rgb(224, 83, 44)
+    }
 }
 
 .saveIcon{
@@ -48,10 +53,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.trashIcon{
-    margin-right: 30px;
+    margin-right: 10px;
+    & > *{
+      margin-left: 15px;
+    }
 }
 
 .mainBody{
@@ -138,5 +143,19 @@ textarea {
   cursor: pointer;
   p{
     margin: 0 7px;
+  }
+  &:hover{
+    background-color: rgb(224, 83, 44)
+  }
+}
+
+@media screen and (width <= 600px) {
+  .saveDel{
+    display: none;
+  }
+
+  .topContainer{
+    justify-content: center;
+    width: 100%;
   }
 }

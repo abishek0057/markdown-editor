@@ -44,7 +44,7 @@ const MainBody = () => {
               func={copyText}
               text={input}
             />
-            <GenericBtn btnName={"Reset"} func={resetText} />
+            <GenericBtn btnName={"Clear"} func={resetText} />
           </div>
         </div>
         <textarea
