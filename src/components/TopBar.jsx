@@ -1,13 +1,12 @@
 import React from "react";
 import DownloadBtn from "./DownloadBtn";
 
-const handleDownload = () => console.log("hello");
-const TopBar = () => {
+const TopBar = ({ input, handleDownload }) => {
   return (
     <div className='topContainer'>
       <h2>MARKDOWN</h2>
       <div className='saveDel'>
-        <DownloadBtn handleDownload={handleDownload} />
+        <DownloadBtn handleDownload={handleDownload} input={input} />
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import GenericBtn from "./GenericBtn";
-import markdown from "../Data/initialmsg";
 
 const MarkComponent = ({ value, language }) => {
   return (
@@ -15,8 +14,7 @@ const MarkComponent = ({ value, language }) => {
   );
 };
 
-const MainBody = () => {
-  const [input, setInput] = useState(markdown);
+const MainBody = ({ input, setInput }) => {
   const inputRef = useRef(null);
   const [copied, setCopied] = useState(false);
 
@@ -31,17 +29,6 @@ const MainBody = () => {
   const resetText = () => {
     setInput("");
     inputRef.current.focus();
-  };
-
-  const handleDownload = () => {
-    const fileData = new Blob([input], { type: "text/plain" });
-    const fileUrl = URL.createObjectURL(fileData);
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = "file.txt";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
   };
 
   return (

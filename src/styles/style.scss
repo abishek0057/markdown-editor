@@ -41,8 +41,14 @@ body{
         margin-left: 5%;
       }
       &:hover{
-        background-color: rgb(224, 83, 44)
+        background-color: rgb(224, 83, 44)s
     }
+}
+
+.disabled {
+  @extend .downloadBtn;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .downloadIcon{
