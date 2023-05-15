@@ -41,7 +41,7 @@ body{
         margin-left: 5%;
       }
       &:hover{
-        background-color: rgb(224, 83, 44)s
+        background-color: rgb(224, 83, 44);
     }
 }
 
@@ -51,9 +51,13 @@ body{
   opacity: 0.5;
 }
 
-.downloadIcon{
+.downloadIcon, .gitIcon{
     color: white;
     width: 25px;
+}
+
+.gitIcon{
+  transform: scale(1.5);
 }
 
 .saveDel{

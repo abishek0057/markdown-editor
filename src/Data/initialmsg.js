@@ -1,5 +1,4 @@
-const markdown = `
-# Markdown syntax guide
+const markdown = `# Markdown syntax guide
 
 ## Headers
 
