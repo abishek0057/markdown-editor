@@ -33,6 +33,17 @@ const MainBody = () => {
     inputRef.current.focus();
   };
 
+  const handleDownload = () => {
+    const fileData = new Blob([input], { type: "text/plain" });
+    const fileUrl = URL.createObjectURL(fileData);
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "file.txt";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className='mainBody'>
       <div className='inpWrapper'>

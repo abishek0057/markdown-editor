@@ -1,10 +1,15 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 import "../styles/style.scss";
-const DownloadBtn = () => {
+const DownloadBtn = ({ handleDownload }) => {
   return (
-    <div className='saveBtn'>
-      <FaDownload className='saveIcon' />
+    <div
+      className='downloadBtn'
+      onClick={() => {
+        handleDownload();
+      }}
+    >
+      <FaDownload className='downloadIcon' />
       <p>Download MD</p>
     </div>
   );

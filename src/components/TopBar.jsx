@@ -1,15 +1,13 @@
 import React from "react";
-import { FaTrashAlt } from "react-icons/fa";
-import SaveBtn from "./SaveBtn";
 import DownloadBtn from "./DownloadBtn";
+
+const handleDownload = () => console.log("hello");
 const TopBar = () => {
   return (
     <div className='topContainer'>
       <h2>MARKDOWN</h2>
       <div className='saveDel'>
-        <FaTrashAlt className='trashIcon' />
-        <SaveBtn />
-        <DownloadBtn />
+        <DownloadBtn handleDownload={handleDownload} />
       </div>
     </div>
   );
