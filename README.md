@@ -1,6 +1,7 @@
 # Markdown Editor
 
-This is a Markdown Editor built using ReactJS with Vite and [react-markdown](https://www.npmjs.com/package/react-markdown) library. It allows you to write Markdown in a textarea on one side of the screen, while previewing the formatted output on the other side.
+This is a Markdown Editor built using ReactJS with Vite and [react-markdown](https://www.npmjs.com/package/react-markdown) library. It allows you to write Markdown in a textarea on one side of the screen, while previewing the formatted output on the other side.  
+[Checkout the app](https://goodmarkdownviewer.netlify.app/)
 
 ## Installation
 
