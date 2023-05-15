@@ -35,7 +35,7 @@ const MainBody = () => {
 
   return (
     <div className='mainBody'>
-      <div className='inpWarpper'>
+      <div className='inpWrapper'>
         <div className='copy-reset'>
           <h4>MARKDOWN</h4>
           <div className='btnGroup'>
